@@ -1,0 +1,16 @@
+<form class="mailForm" action="mail.php" method="post">
+    <div class="mailForm__group">
+        <label for="name">ニンジンわんこ</label>
+        <input type="text" id="name" name="name" required/>
+    </div>
+    <div class="mailForm__group">
+        <label for="name">メールアドレス</label>
+        <input type="text" id="email" name="email" required/>
+    </div>
+    <div class="mailForm__group">
+        <label for="name">内容</label>
+        <textarea type="text" id="content" name="content" required></textarea>
+    </div>
+    <input type="hidden" id="token" name="token" value="1234567" />
+    <button class="mailForm__submit" type="submit">送信</button>
+</form>
